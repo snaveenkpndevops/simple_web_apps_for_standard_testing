@@ -1,43 +1,72 @@
 # Test Environment - Customer App
 
-The Customer App application is a web application written using ReactJS on the frontend and Node.js in the backend.
+The Customer App is a web application built with ReactJS (frontend) and Node.js (backend).
 
-## PRE-REQUISITES
+## Pre-requisites
 
-The only pre-requisite to run this app is to have npm and Node.js installed in your machine. For instructions on how to install, go to https://nodejs.org/en/
+Make sure the following are installed on your machine:
 
-## How to run it
+- Node.js  
+- npm  
 
-After cloning the repo ...
+To install Node.js and npm, visit: https://nodejs.org/en/
 
-### 1) Starting the backend
+## How to Run the Application
 
-Open a terminal, go to the root of this repo and:
+After cloning the repository, follow the steps below.
 
-```sh
+### 1) Start the Backend
+
+Open a terminal, navigate to the root of the repository, and run:
+
 cd backend
 npm install
 npm start
-```
 
-The server will be listening on port 3001. If you need to change this, go to `/backend/server.js` and change the port variable value in the first line.
+The backend server will run on port 3001 by default.
 
-```js
+If you want to change the port, update the value in:
+
+/backend/server.js
+
 const port = 3001;
-```
 
-### 2) Starting the frontend
+---
 
-Open a new terminal, go to the root of this repo and:
+### 2) Start the Frontend
 
-**Important:** if you changed the backend port number, you will have to change it also on `/frontend/src/App.js`, on line 3, before starting the frontend.
+Open a new terminal, navigate to the root of the repository, and run:
 
-```sh
 cd frontend
 npm install
-update /frontend/.env file --> If we are connecting to backend locally. update REACT_APP_API_URL=http://localhost:3001/. If connecting azure apps then update the values to azure web apps dns. We don't need to update anything in /src/app.js code.
+
+#### Environment Configuration
+
+Update the .env file located at:
+
+/frontend/.env
+
+##### Case 1: Connecting to Local Backend
+
+REACT_APP_API_URL=http://localhost:3001/
+
+Make sure the port matches your backend configuration.
+
+##### Case 2: Connecting to Azure Web App Backend
+
+REACT_APP_API_URL=http://customer-backend-app-ckgya4dedudehkcr.centralindia-01.azurewebsites.net/
+
+- Azure App Service automatically runs the backend on port 8080
+- So, you only need to provide the DNS URL
+- No changes are required in /frontend/src/App.js
+
+### 3) Run the Frontend
+
 npm run build
 npm start
-```
 
-Go to a web browser and open `http://localhost:3000/`.
+## Access the Application
+
+Open your browser and navigate to:
+
+http://localhost:3000/
