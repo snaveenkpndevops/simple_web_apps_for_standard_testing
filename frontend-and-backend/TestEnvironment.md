@@ -35,6 +35,8 @@ Open a new terminal, go to the root of this repo and:
 ```sh
 cd frontend
 npm install
+update /frontend/.env file --> If we are connecting to backend locally. update REACT_APP_API_URL=http://localhost:3001/. If connecting azure apps then update the values to azure web apps dns.
+npm run build
 npm start
 ```
 

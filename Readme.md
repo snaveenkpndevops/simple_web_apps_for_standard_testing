@@ -1,12 +1,26 @@
 # 🚀 Customer App - Frontend & Backend
 
-This project contains a simple **Customer Application** with both frontend and backend components.
+This project is cloned from the repository:
+👉 https://github.com/wlsf82/frontend-and-backend
+
+**Original Author/Contributor:** Walmyr
+
+This version includes minor modifications made for hands-on learning and experimentation.
 
 ---
 
-## 📌 Getting Started
+## 📌 Overview
 
-To set up and run the application locally, please follow the detailed instructions provided in the link below:
+This project contains a simple **Customer Application** with both:
+
+* 🌐 Frontend (React)
+* ⚙️ Backend (Node.js + Express)
+
+---
+
+## 🚀 Getting Started
+
+To set up and run the application locally, follow the step-by-step guide below:
 
 👉 **Setup Guide:**
 https://github.com/snaveenkpndevops/simple_web_apps_for_standard_testing/blob/release/v1/frontend-and-backend/TestEnvironment.md
@@ -26,26 +40,27 @@ Project_2/
 
 ## 🧰 Tech Stack
 
-* Frontend: React
-* Backend: Node.js, Express
-* API Calls: Axios
+* **Frontend:** React
+* **Backend:** Node.js, Express
+* **API Communication:** Axios
 
 ---
 
 ## ⚙️ Notes
 
-* Ensure both frontend and backend are running for the application to work properly.
-* Environment variables should be configured as per the setup guide.
-* Backend runs on a configurable port using environment variables.
+* Ensure both frontend and backend servers are running simultaneously.
+* Configure environment variables as described in the setup guide.
+* Backend port is dynamically configurable using environment variables (`process.env.PORT`).
 
 ---
 
 ## 🤝 Contribution
 
-Feel free to fork the repo and raise a PR for any improvements.
+Contributions are welcome!
+Feel free to fork this repository and raise a pull request for improvements.
 
 ---
 
 ## 📄 License
 
-This project is for learning and testing purposes.
+This project is intended for **learning and testing purposes only**.
